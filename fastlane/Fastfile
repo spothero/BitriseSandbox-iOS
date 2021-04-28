@@ -1,0 +1,11 @@
+default_platform :ios
+
+platform :ios do
+  lane :noop do
+    UI.message 'Nothing to see here!'
+  end
+
+  lane :noop_error do
+    UI.user_error! 'No errors to see here, carry on!'
+  end
+end
